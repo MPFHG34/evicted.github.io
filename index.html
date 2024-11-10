@@ -62,11 +62,27 @@
           ^
       </div>
     </div>
-  
-  <script>
-    var rythm = new Rythm()
-    rythm.setMusic('/files/yvngxchris - April fools (Lyrics).mp3')
-    rythm.start()
-  </script>
+
+    <audio src="/files/yvngxchris - April fools (Lyrics).mp3" loop id="audio"></audio>
   </body>
+
+  <script>
+    var init = false
+    var audio = $("#audio")[0]
+
+    function start() {
+      if (init) return
+      else init = true
+      var rythm = new Rythm()
+
+      rythm.connectExternalAudioElement(audio)
+      rythm.start()
+    }
+
+    interval = setInterval(() => {
+      audio.play()
+      .then(start)
+      .catch(console.log)
+    }, 50)
+  </script>
 </html>
