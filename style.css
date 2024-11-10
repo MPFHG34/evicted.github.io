@@ -1,0 +1,219 @@
+body {
+  background-color: var(--theme_background);
+  color: var(--theme_text_primary);
+  font-family: Monospace;
+}
+
+#particles-js {
+  position: fixed;
+  z-index: -1;
+}
+
+.title {
+  color: var(--theme_text_primary);
+  text-align: center;
+  font-size: 15vw;
+  font-family: Minecraftia;
+  text-shadow: 0 0 10px var(--theme_text_primary);
+  font-weight: 900;
+  padding: 0;
+  margin: 10vh 0 0 0;
+}
+
+.description {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+  text-shadow: 0 0 10px white;
+  font-weight: 900;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Aligns icons at the top */
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px; /* Fixed width to keep icons aligned */
+  padding: 15px; /* Adds padding around each icon to prevent overlap */
+}
+
+.icon-img {
+  width: 50px;
+  height: 50px;
+  filter: invert(1) blur(0.7px);
+}
+
+.icon-description {
+  color: white;
+  font-size: 12px;
+  text-shadow: 0 0 5px white;
+  margin-top: 5px;
+  text-align: center;
+  max-width: 150px; /* Sets a max width to prevent overlap */
+  overflow-wrap: break-word; /* Allows long words to break and wrap onto the next line */
+}
+
+.first {
+    -webkit-animation: bannermove 30s linear infinite;
+       -moz-animation: bannermove 30s linear infinite;
+        -ms-animation: bannermove 30s linear infinite;
+         -o-animation: bannermove 30s linear infinite;
+            animation: bannermove 30s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+
+.main {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.photobanner {
+    height: 237px;
+    width: 4615px;
+    margin-bottom: 80px;
+}
+
+.photobanner img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+ 
+.photobanner img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+ 
+    -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+.container {
+  width: 80%;
+  background-color: black;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%);
+  max-width: 400px;
+  min-width: 250px;
+}
+
+ul {
+  padding: 0;
+  margin: 0 15px;
+}
+
+.tab, .module, .setting, .setting2, .bottom {
+  padding-left: 10px;
+}
+
+.module, .setting, .setting2 {
+  text-shadow: 0 0 5px rgba(255,255,255, 0.25), 0 0 10px rgb(255,200,255);
+}
+
+.setting, .setting2 {
+  text-shadow: 0 0 7px rgb(255,100,255);
+}
+
+.setting {
+  padding-left: 20px;
+}
+
+.setting2 {
+  padding-left: 30px;
+}
+
+.bottom {
+  padding-bottom: 15px;
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--theme_background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 181, 184, 0.3);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 181, 184, 0.5);
+}
