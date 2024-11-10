@@ -70,13 +70,15 @@
     var init = false
     var audio = $("#audio")[0]
 
-    audio.volume = 0.1
+    audio.volume = 0.3
     var interval
 
     function start() {
       if (init) return
       else init = true
       var rythm = new Rythm()
+
+      rythm.addRythm('title', 'text-shadow', 0, 100)
 
       rythm.connectExternalAudioElement(audio)
       rythm.start()
@@ -89,3 +91,4 @@
     }, 50)
   </script>
 </html>
+3
