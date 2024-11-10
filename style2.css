@@ -1,0 +1,62 @@
+body {
+  background-color: var(--theme_background);
+  color: var(--theme_text_primary);
+  font-family: Monospace;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  top: 0;
+  width: 100%;
+}
+
+.footer {
+  color: white;
+  list-style: none;
+  margin: 0;
+  height: 2%;
+  padding: 0;
+  position: fixed;
+  background-color: #000000;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  transition: height 0.25s linear;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.footer:hover {
+  height: 5%;
+}
+
+.footer:hover:after {
+  content: "© evicted.nexus 2024";
+}
+
+.active {
+  background-color: #111111;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  transition: background-color 0.35s linear;
+  padding: 1px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #151515;
+}
